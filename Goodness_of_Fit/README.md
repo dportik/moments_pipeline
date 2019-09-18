@@ -36,12 +36,11 @@ Within the `Simulate_and_Optimize.py` script, let's assume you've supplied the c
 
 The model will first be fit to the empirical data using the following function:
 
-***Optimize_Empirical(fs, pts, outfile, model_name, func, in_params, fs_folded)***
+***Optimize_Empirical(fs, outfile, model_name, func, in_params, fs_folded)***
  
 ***Mandatory Arguments:***
 
 + **fs**:  spectrum object name
-+ **pts**: grid size for extrapolation, list of three values
 + **outfile**:  prefix for output naming
 + **model_name**: a label help name the output files; ex. "sym_mig"
 + **func**: access the model function from within 'Simulate_and_Optimize.py' or from a separate model script
@@ -239,10 +238,10 @@ It will be clear if either argument has been misspecified because the calculatio
 
 ## Example Data Set:
 
-In the folder labeled *Example_Data* you will find a SNPs input file that will run with the `Simulate_and_Optimize.py` script.
+In the folder labeled [Example_Data](https://github.com/dportik/moments_pipeline/tree/master/Goodness_of_Fit/Example_Data) you will find a SNPs input file that will run with the `Simulate_and_Optimize.py` script.
 You will only need to edit the path to the file in the script, and then the script should run normally. The 
-outputs for five simulations (from truncated optimizations) are contained within the *Example_Data* folder, in a separate folder labeled *Example_Outputs*.
-Running the `Simulate_and_Optimize.py` script as is will actually produce 100 simulations, rather than five. 
+outputs for five simulations (from truncated optimizations) are contained within the [Example_Data folder](https://github.com/dportik/moments_pipeline/tree/master/Goodness_of_Fit/Example_Data), in a separate folder labeled [Example_Outputs](https://github.com/dportik/moments_pipeline/tree/master/Goodness_of_Fit/Example_Data/Example_Outputs).
+Running the `Simulate_and_Optimize.py` script as is will produce 100 simulations, rather than the 10 in this folder.
 You may choose to test the script using these data to ensure everything is working properly before examining your own empirical data. 
 
 
