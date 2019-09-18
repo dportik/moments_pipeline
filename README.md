@@ -4,7 +4,7 @@
 
 ## Purpose:
 
-Perform demographic model optimizations and comparisons with this accessible and flexible  tool called *moments_pipeline*.
+Perform demographic model optimizations and comparisons with this accessible and flexible  tool called *moments_pipeline*. This tool is a direct translation of the [*dadi_pipeline*](https://github.com/dportik/dadi_pipeline/) for use with the package [moments](https://bitbucket.org/simongravel/moments/src/master/) (as opposed to [dadi](https://bitbucket.org/gutenkunstlab/dadi)).
 
 This tool is designed to work with the Python package [moments](https://bitbucket.org/simongravel/moments/src/master/) and assumes you already have the package installed. This pipeline can be run using Python 2 or 3, but moments is now intended to be run with Python 3 only. You'll need to be familiar with how moments works, and some of the basic syntax for writing moments scripts with python. Unfortunately there do not appear to be many resources for getting help with moments. However, given the strong similarity between moments and [dadi](https://bitbucket.org/gutenkunstlab/dadi), you can take advantage of the abundance of resources available for dadi, including the [dadi user group](https://groups.google.com/forum/#!forum/dadi-user). Alternatively, you can also email the authors of moments directly, as they have been very helpful. Before attempting to use these scripts, please read over the user manual for moments and try running the program with the example files.
 
