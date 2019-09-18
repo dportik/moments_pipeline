@@ -4,9 +4,9 @@
 
 ## Purpose:
 
-Perform demographic model optimizations and comparisons with this accessible and flexible  tool called *moments_pipeline*. This tool is a direct translation of the [*dadi_pipeline*](https://github.com/dportik/dadi_pipeline/) for use with the package [moments](https://bitbucket.org/simongravel/moments/src/master/) (as opposed to [dadi](https://bitbucket.org/gutenkunstlab/dadi)).
+Perform demographic model optimizations and comparisons with this accessible and flexible  tool called *moments_pipeline*. This tool is a direct translation of the [dadi_pipeline](https://github.com/dportik/dadi_pipeline/) tool that allows it to be used with the package [moments](https://bitbucket.org/simongravel/moments/src/master/) (as opposed to [dadi](https://bitbucket.org/gutenkunstlab/dadi)).
 
-This tool is designed to work with the Python package [moments](https://bitbucket.org/simongravel/moments/src/master/) and assumes you already have the package installed. This pipeline can be run using Python 2 or 3, but moments is now intended to be run with Python 3 only. You'll need to be familiar with how moments works, and some of the basic syntax for writing moments scripts with python. Unfortunately there do not appear to be many resources for getting help with moments. However, given the strong similarity between moments and [dadi](https://bitbucket.org/gutenkunstlab/dadi), you can take advantage of the abundance of resources available for dadi, including the [dadi user group](https://groups.google.com/forum/#!forum/dadi-user). Alternatively, you can also email the authors of moments directly, as they have been very helpful. Before attempting to use these scripts, please read over the user manual for moments and try running the program with the example files.
+This tool is designed to work with the Python package [moments](https://bitbucket.org/simongravel/moments/src/master/) and assumes you already have the package installed. This pipeline can be run using Python 2 or 3, but moments is now intended to be run with Python 3 only. You'll need to be familiar with how moments works, and some of the basic syntax for writing moments scripts with python. Unfortunately there do not appear to be many community resources for getting help with moments. However, given the strong similarity between moments and [dadi](https://bitbucket.org/gutenkunstlab/dadi), you can take advantage of the abundance of resources available for dadi, including the [dadi user group](https://groups.google.com/forum/#!forum/dadi-user). Alternatively, you can also email the authors of moments directly, as they have been very helpful. Before attempting to use these scripts, please read over the user manual for moments and try running the program with the example files.
 
 ## Overview:
 
@@ -157,9 +157,9 @@ That's why I have written a range of 1-6 to perform this 5 times.
 
 ## Test Data Set:
 
-In the folder labeled *Example_Data* you will find a SNPs input file that will run with the `moments_Run_Optimizations.py` script.
+In the [Example Data Folder](https://github.com/dportik/moments_pipeline/tree/master/Example_Data) you will find a SNPs input file that will run with the `moments_Run_Optimizations.py` script.
 You will only need to edit the path to the file in the script, and then you will be able to run all five examples above. The 
-outputs for these examples are also contained within the *Example_Data* folder, in a separate folder labeled *Example_Outputs*.
+outputs for these examples are also contained within the [Example Data Folder](https://github.com/dportik/moments_pipeline/tree/master/Example_Data), in a separate folder labeled [Example_Outputs](https://github.com/dportik/moments_pipeline/tree/master/Example_Data/Example_Outputs).
 Please test the script using these data to ensure everything is working properly before examining your own empirical data. 
 
 
@@ -311,7 +311,7 @@ That will allow you to more or less pick up where you left off. Please note that
 
 This demographic modeling pipeline is a direct translation of the *dadi_pipeline* of Portik et al. (2016). This allows their multi-round optimization routine, original models, and custom output files to be used by the program moments. Because of these important features, the *dadi_pipeline* and *moments_pipeline* are not 'wrappers' for dadi or moments, but rather additional packages. The *dadi_pipeline* was published as part of [Portik et al. (2017)](https://doi.org/10.1111/mec.14266) and the *moments_pipeline* was published as part of [Leache et al. (2019)](https://doi.org/10.1111/mec.14266). If you have used *moments_pipeline* to run your analyses, please indicate so in your publication. Here is an example of how you can cite this workflow:
 
-> To explore alternative demographic models, we used moments (Jouganous et al. 2017) to analyze joint site frequency spectra. Moments uses differential equations to simulate the evolution of allele frequency distributions over time and is closely related to the diffusion approximation method used in the program dadi (Gutenkunst et al. 2009). We fit 15 demographic models using moments_pipeline (Leache et al. 2019), which allows the demographic modeling pipeline of Portik et al. (2017) to be implemented using moments.
+> To explore alternative demographic models, we used moments (Jouganous et al. 2017) to analyze joint site frequency spectra. Moments uses differential equations to simulate the evolution of allele frequency distributions over time and is closely related to the diffusion approximation method used in the program dadi (Gutenkunst et al. 2009). We fit 15 demographic models using moments_pipeline (Leache et al. 2019), which allows the demographic modeling pipeline of Portik et al. (2017) to be implemented with moments.
 
 The main motivation behind the creation of this workflow was to increase transparency and reproducibility in demographic modeling. In your publication you should report the key parameters of the optimization routine. The goal is to allow other researchers to plug your data into *moments_pipeline* and run the same analyses. For example:
 
@@ -335,6 +335,8 @@ approximation. Genetics 117: 1549-1567.*
 ### Publications that have used the moments demographic modeling workflow (moments_pipeline):
 
 + Leache, A.D., Portik, D.M., Rivera, D., Rodel, M.-O., Penner, J., Gvozdik, V., Greenbaum, E., Jongsma, G.F.M., Ofori-Boateng, C., Burger, M., Eniang, E.A., Bell, R.C., and M.K. Fujita. **2019**. Exploring rain forest diversification using demographic model testing in the African foam-nest tree frog Chiromantis rufescens. ***Journal of Biogeography***, Early View. *https://doi.org/10.1111/jbi.13716*
+
+For a complete list of publications that have used the dadi version of the demographic modeling workflow (dadi_pipeline), please see [here](https://github.com/dportik/dadi_pipeline/).
 
 
 ## License:
