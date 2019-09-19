@@ -210,7 +210,7 @@ def Optimize_Routine(fs, outfile, model_name, func, rounds, param_number, fs_fol
     #call function that determines if our replicates, maxiter, and fold have been set or need to be generated for us
     reps_list, maxiters_list, folds_list = parse_opt_settings(rounds, reps, maxiters, folds)
     
-    print "\n\n============================================================================\nModel {}\n============================================================================".format(model_name)
+    print("\n\n============================================================================\nModel {}\n============================================================================".format(model_name))
 
     #start keeping track of time it takes to complete optimizations for this model
     tb_round = datetime.now()
