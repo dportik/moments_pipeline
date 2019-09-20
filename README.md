@@ -240,9 +240,10 @@ When fitting demographic models, it is important to perform multiple runs and en
 
 Below is a summary of the log-likelihood scores obtained using the default four-round optimization settings present in the 2D pipeline. This analysis was conducted for a particular model (nomig, the simplest 2D model) using the example data provided. You can clearly see the improvement in log-likelihood scores and decrease in variation among replicates as the optimization rounds progress. 
 
-![Rounds](https://github.com/dportik/dadi_pipeline/blob/master/Two_Population_Pipeline/Older_2D_Pipelines/2D_Pipeline_v1/NoMig_Zoom.png)
+![Rounds](https://github.com/dportik/dadi_pipeline/blob/master/Example_Data/NoMig_Zoom.png)
 
-If several independent runs for this model each converge on similar log-likelihood scores in the fourth round, you can be mostly confident that analyses are not getting trapped on local optima, and that the true log-likelihood has been obtained.
+**Please understand that it is possible for a single execution of the pipeline to get stuck on a local optima for any given model! This is why I strongly recommend running the pipeline multiple times for a given model.** If several independent runs for this model each converge on similar log-likelihood scores in their last optimization rounds, you can be mostly confident that analyses are not getting trapped on local optima, and that the true log-likelihood has been obtained.
+
 
 ## My Analysis Crashed! What Now?
 
@@ -299,6 +300,9 @@ so that it looks like this:
 
 That will allow you to more or less pick up where you left off. Please note that if running multiple models in a given script, changing the rounds, reps, maxiters, and folds arguments will affect all of them. So, it is best to isolate a single model to jump-start a crashed analysis.
 
+## **Reporting Bugs/Errors** <a name="RBE"></a>
+
+If you encounter any issues while using *moments_pipeline*, it could be the result of a moments-specific problem or an error in moments_pipeline. If you believe the issue is specific to moments_pipeline, please post the error along with the relevant details of the analysis in the [issues page](https://github.com/dportik/moments_pipeline/issues) in the repository. 
 
 ## Caveats:
 
@@ -309,7 +313,7 @@ That will allow you to more or less pick up where you left off. Please note that
 
 ### How to cite *moments_pipeline*:
 
-This demographic modeling pipeline is a direct translation of the *dadi_pipeline* of Portik et al. (2016). This allows their multi-round optimization routine, original models, and custom output files to be used by the program moments. Because of these important features, the *dadi_pipeline* and *moments_pipeline* are not 'wrappers' for dadi or moments, but rather additional packages. The *dadi_pipeline* was published as part of [Portik et al. (2017)](https://doi.org/10.1111/mec.14266) and the *moments_pipeline* was published as part of [Leache et al. (2019)](https://doi.org/10.1111/mec.14266). If you have used *moments_pipeline* to run your analyses, please indicate so in your publication. Here is an example of how you can cite this workflow:
+This demographic modeling pipeline is a direct translation of the *dadi_pipeline* of Portik et al. (2017). This allows their multi-round optimization routine, original models, and custom output files to be used by the program moments. Because of these important features, the *dadi_pipeline* and *moments_pipeline* are not 'wrappers' for dadi or moments, but rather additional packages. The *dadi_pipeline* was published as part of [Portik et al. (2017)](https://doi.org/10.1111/mec.14266) and the *moments_pipeline* was published as part of [Leache et al. (2019)](https://doi.org/10.1111/mec.14266). If you have used *moments_pipeline* to run your analyses, please indicate so in your publication. Here is an example of how you can cite this workflow:
 
 > To explore alternative demographic models, we used moments (Jouganous et al. 2017) to analyze joint site frequency spectra. Moments uses differential equations to simulate the evolution of allele frequency distributions over time and is closely related to the diffusion approximation method used in the program dadi (Gutenkunst et al. 2009). We fit 15 demographic models using moments_pipeline (Leache et al. 2019), which allows the demographic modeling pipeline of Portik et al. (2017) to be implemented with moments.
 

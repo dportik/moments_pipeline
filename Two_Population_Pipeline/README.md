@@ -79,7 +79,7 @@ When fitting demographic models, it is important to perform multiple runs and en
 
 Below is a summary of the log-likelihood scores obtained using the default four-round optimization settings present in the 2D pipeline. This analysis was conducted for a particular model (nomig, the simplest 2D model) using the example data provided. You can clearly see the improvement in log-likelihood scores and decrease in variation among replicates as the optimization rounds progress. 
 
-![Rounds](https://github.com/dportik/dadi_pipeline/blob/master/Two_Population_Pipeline/Older_2D_Pipelines/2D_Pipeline_v1/NoMig_Zoom.png)
+![Rounds](https://github.com/dportik/dadi_pipeline/blob/master/Example_Data/NoMig_Zoom.png)
 
 ## Performing Multiple Independent Optimization Routines:
 
@@ -254,7 +254,7 @@ If you see this, check to make sure both relevant arguments actually agree on th
 
 ### How to cite *moments_pipeline*:
 
-This demographic modeling pipeline is a direct translation of the *dadi_pipeline* of Portik et al. (2016). This allows their multi-round optimization routine, original models, and custom output files to be used by the program moments. Because of these important features, the *dadi_pipeline* and *moments_pipeline* are not 'wrappers' for dadi or moments, but rather additional packages. The *dadi_pipeline* was published as part of [Portik et al. (2017)](https://doi.org/10.1111/mec.14266) and the *moments_pipeline* was published as part of [Leache et al. (2019)](https://doi.org/10.1111/mec.14266). If you have used *moments_pipeline* to run your analyses, please indicate so in your publication. Here is an example of how to cite this workflow:
+This demographic modeling pipeline is a direct translation of the *dadi_pipeline* of Portik et al. (2017). This allows their multi-round optimization routine, original models, and custom output files to be used by the program moments. Because of these important features, the *dadi_pipeline* and *moments_pipeline* are not 'wrappers' for dadi or moments, but rather additional packages. The *dadi_pipeline* was published as part of [Portik et al. (2017)](https://doi.org/10.1111/mec.14266) and the *moments_pipeline* was published as part of [Leache et al. (2019)](https://doi.org/10.1111/mec.14266). If you have used *moments_pipeline* to run your analyses, please indicate so in your publication. Here is an example of how to cite this workflow:
 
 > To explore alternative demographic models, we used moments (Jouganous et al. 2017) to analyze joint site frequency spectra. Moments uses differential equations to simulate the evolution of allele frequency distributions over time and is closely related to the diffusion approximation method used in the program dadi (Gutenkunst et al. 2009). We fit 15 demographic models using moments_pipeline (Leache et al. 2019), which allows the demographic modeling pipeline of Portik et al. (2017) to be implemented using moments.
 
