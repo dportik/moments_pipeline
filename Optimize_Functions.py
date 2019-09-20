@@ -175,7 +175,7 @@ def write_log(outfile, model_name, rep_results, roundrep):
             fh_log.write(line)
         fh_templog.close()
     except IOError:
-        print "Nothing written to log file this replicate..."
+        print("Nothing written to log file this replicate...")
     fh_log.write("likelihood = {}\n".format(rep_results[1]))
     fh_log.write("theta = {}\n".format(rep_results[4]))
     fh_log.write("Optimized parameters = {}\n".format(rep_results[5]))
