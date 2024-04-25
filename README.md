@@ -347,13 +347,3 @@ For a complete list of publications that have used the dadi version of the demog
 
 GNU Lesser General Public License v3.0
 
-## Contact:
-
-Daniel Portik, PhD
-
-Postdoctoral Researcher
-
-California Academy of Sciences
-
-daniel.portik@gmail.com
-
